@@ -12,6 +12,8 @@ Main content border color: #dddddd
 body {
     background-image: url("../images/background.png");
     margin: 0;
+    padding-bottom: 41px;
+    position: relative;
 }
 
 .width960 {
@@ -72,9 +74,13 @@ footer {
     color: #ddd;
     text-align: center;
     height: 67px;
-    margin-top: 100px;
+    margin-top: 50px;
     border-top: solid 10px #4aaaa5;
     font-size: 10pt;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
 }
 
 #portfolioPic {
@@ -91,6 +97,7 @@ article {
 #portfolioAnchor {
     border-left: solid 1px;
     border-right: solid 1px;
+    border-color: #eee;
 }
 
 input {
@@ -144,4 +151,8 @@ ul {
 li {
     float: left;
     margin-top: 10px;
+}
+
+#footerDiv {
+    padding-top: 45px;
 }
