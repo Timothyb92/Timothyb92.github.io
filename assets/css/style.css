@@ -43,7 +43,7 @@ h2 {
     font-size: 22pt;
 }
 
-a {
+.navAnchor {
     text-decoration: none;
     color: #777;
     font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
