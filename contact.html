@@ -5,38 +5,71 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Tim's Portfolio</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/css/reset.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css" integrity="sha384-Smlep5jCw/wG7hdkwQ/Z5nLIefveQRIY9nfy6xoR1uRYBtpZgI6339F5dgvm/e9B" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" media="screen" href="assets/css/style.css">
     <script src="main.js"></script>
 </head>
-<body>
-    <nav>
-        <div class="width960">
-            <h1>Tim Bedsole</h1>
-            <ul>
-                <li id="aboutAnchor"><a href="index.html" class="navAnchor">About</a></li>
-                <li id="portfolioAnchor"><a href="portfolio.html" class="navAnchor">Portfolio</a></li>
-                <li id="contactAnchor"><a href="contact.html" class="navAnchor">Contact</a></li>
+<body class="site">
+    <div class="navbar container-fluid bg-white p-0 navbar-light" id="navContainer">
+        <div class="container p-0">
+            <nav class="navbar-header">
+                    <a class="navbar-brand" href="index.html" id="logo">Tim Bedsole</a>
+                </nav>
+            <ul class="nav navbar-nav ml-auto">
+                <li id="aboutAnchor" class="nav-item">
+                    <a href="index.html" class="nav-link">About</a>
+                </li>
+                <li id="portfolioAnchor" class="nav-item">
+                    <a href="portfolio.html" class="nav-link">Portfolio</a>
+                </li>
+                <li id="contactAnchor" class="nav-item">
+                    <a href="contact.html" class="nav-link">Contact</a>
+                </li>
             </ul>
         </div>
-    </nav>
+    </div>
+    </div>
     <main>
-        <article class="width960">
-            <header>
-                <h2>Contact</h2>
-            </header>
-            <form>
-                <p>Name</p>
-                <input name="name" type="text" value="Your Name">
-                <p>Email</p>
-                <input type="text" name="email" value="Email@example.com">
-                <p>Message</p>
-                <textarea name="message" id="message" cols="30" rows="10"></textarea>
-                <button>Submit</button>
-            </form>
-        </article>
+        <div class="container site-content">
+            <article>
+                <div class="row">
+                    <div class="col-md-12">
+                        <header>
+                            <h2>Contact</h2>
+                        </header>
+                    </div>
+                </div>
+                <form>
+                    <div class="form-group">
+                        <label for="nameInput">Name</label>
+                        <input name="name" type="text" value="Your Name" id="nameInput" class="form-control">
+                    </div>
+                    <div class="form-group">
+                        <label for="emailInput">Email</label>
+                        <input type="email" name="email" value="Email@example.com" id="emailInput" class="form-control">
+                    </div>
+                    <div class="form-group">
+                        <label for="messageTextArea">Message</label>
+                        <textarea name="message" id="message" cols="30" rows="10" id="messageTextArea" class="form-control"></textarea>
+                    </div>
+                    <button type="submit" class="btn">Submit</button>
+                </form>
+            </article>
+        </div>
     </main>
     <footer>
-        <div id="footerDiv">Copyright &copy;</div>
+        <div class="container" id="footerContainer">
+            <div class="row justify-content-center">
+                <div id="footerP" class="col-md-12 text-center">
+                    <p class="col-md-3">Copyright &copy;</p>
+                    <p class="col-md-3"><a href="https://www.linkedin.com/in/timothy-bedsole-626b01162/"><i class="fab fa-linkedin"></i><span> Linked</span></a></p>
+                    <p class="col-md-3"><a href="https://github.com/Timothyb92"><i class="fab fa-github"></i><span> Timothyb92</span></a></p>
+                    <p class="col-md-3"><i class="far fa-envelope"></i><span> timbedsole@gmail.com</span></p>
+                </div>
+            </div>
+        </div>
     </footer>
 </body>
 </html>

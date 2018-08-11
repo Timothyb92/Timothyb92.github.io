@@ -11,89 +11,51 @@ Main content border color: #dddddd
 
 body {
     background-image: url("../images/background.png");
-    margin: 0;
-    padding-bottom: 120px;
-    position: relative;
-    box-sizing: border-box;
-    height: 100%;
-    min-height: 100vh;
 }
 
-.width960 {
-    width: 960px;
-    margin: auto;
-    background-color: #fff;
-}
-
-h1 {
-    float: left;
+.navbar-brand {
     background-color: #4aaaa5;
-    color: #fff;
-    height: 100%;
+    color: #fff !important;
     margin: 0;
     padding: 20px;
     font-family: 'Georgia', Times, Times New Roman, serif;
+    font-size: 18pt;
+    font-weight: bold;
 }
 
-h2 {
+a {
+    color: #777;
+    text-decoration: none;
+    padding-left: 16px !important;
+    padding-right: 16px !important;
+}
+
+.portfolioAnchor {
+    padding: 0 !important;
+}
+
+.container {
+    background-color: #fff;
+}
+
+h2, h3 {
     font-family: 'Georgia', Times, Times New Roman, serif;
     border-bottom: solid 2px #ddd;
     color: #4aaaa5;
     padding-bottom: 30px;
     font-size: 22pt;
-}
-
-.navAnchor {
-    text-decoration: none;
-    color: #777;
-    font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
-    padding: 20px;
-}
-
-nav {
-    background-color: #fff;
-    overflow: auto;
-    margin-bottom: 30px;
-}
-
-header {
-    clear: both;
+    margin: 24.347px 0;
+    font-weight: bold;
 }
 
 p {
     font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
     color: #8e8e93;
-    line-height: 2;
+    line-height: 2.5;
 }
 
-form {
-    font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
-    color: #777;
-}
-
-footer {
-    font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
-    background-color: #666;
-    color: #bbb;
-    text-align: center;
-    height: 67px;
-    border-top: solid 10px #4aaaa5;
-    font-size: 10pt;
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-    box-sizing: border-box;
-}
-
-#portfolioPic {
-    float: left;
-    margin-right: 15px;
-    margin-bottom: 15px;
-}
-
-article {
-    overflow: auto;
-    padding: 20px;
+#navDiv {
+    padding: 0;
 }
 
 #portfolioAnchor {
@@ -102,62 +64,126 @@ article {
     border-color: #eee;
 }
 
-input {
-    width: 953px;
-    padding: 5px;
-    color: #777;
-}
 
-textarea {
-    width: 953px;
-}
-
-button {
-    height: 40px;
-    width: 100px;
-    background-color: #4aaaa5;
-    color: #fff;
-    font-size: 10pt;
-}
-
-form p {
-    margin-bottom: 0;
-}
-
-.portfolioArticle img {
+/* main img {
     height: 320px;
-    width: 320px;
-    margin: 20px 20px 20px 0;
+    widows: 320px;;
+
+    Commented out because it was breaking responsiveness
+} */
+
+.redBorder {
+    border: red 2px solid;
 }
 
-.container {
-    position: relative;
-    float: left;
-    text-align: center;
-}
 
-.centered-bottom {
-    background-color: #4aaaa5;
-    color: #fff;
-    padding: 10px;
-    position: absolute;
-    bottom: 50px;
-    width: 300px
-}
 
-ul {
-    float: right;
-    list-style-type: none;
-}
+/* Copied from https://philipwalton.github.io/solved-by-flexbox/demos/sticky-footer/ */
+.site {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+  }
+  
+  .site-content {
+    flex: 1;
+  }
+  /* ******************************************************************************** */
 
-li {
-    float: left;
-    margin-top: 10px;
-}
 
-#footerDiv {
-    position: absolute;
-    bottom: 10px;
-    left: 0;
-    right: 0;
-}
+
+  footer {
+      margin-top: 50px;
+      background-color: #666;
+      border-top: solid 10px #4aaaa5;
+      font-size: 10pt;
+  }
+
+  #footerContainer {
+    background-color: #666;
+  }
+
+  footer a {
+    color: inherit;
+  }
+
+  #footerP p {
+      color: #bbb;
+      margin-bottom: 0;
+      padding-top: 20px;
+      float: left;
+  }
+
+  button {
+      background-color: #4aaaa5;
+      color: #fff;
+      margin-bottom: 20px;
+  }
+
+  form {
+      color: #777;
+  }
+
+  .portfolioImg {
+      position: relative;
+      padding: 0;
+  }
+
+  .centered-bottom {
+      position: absolute;
+      background-color: #4aaaa5;
+      color: #fff;
+      padding: 10px 0;
+      position: absolute;
+      bottom: 50px;
+  }
+
+  ul {
+      flex-direction: row !important;
+  }
+
+  li {
+      padding: 8px !important;
+  
+    }
+
+    .portfolioImg {
+        margin: 0 20px 20px 20px;
+    }
+
+    #aboutPic {
+        max-width: 670px;
+        max-height: 600px;
+        margin-right: 20px;
+    }
+
+    .marginTop {
+        margin-top: 50px;
+    }
+    
+    .img-fluid {
+        width: 100%;
+        height: auto;
+        padding: 15px 0px;
+    }
+
+    .portfolioButtons {
+        padding-top: 30px;
+        padding-bottom: 20px
+      }
+    
+    
+    @media only screen and (max-width: 767px) {
+        .navbar-header {
+            background-color: #4aaaa5;
+            width: 100%;
+            text-align: center;
+        }
+        .nav {
+            margin: 0 auto;
+        }
+    }
+
+    #navContainer {
+        margin-bottom: 50px;
+    }

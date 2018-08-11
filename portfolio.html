@@ -1,57 +1,166 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Tim's Portfolio</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/css/reset.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css" integrity="sha384-Smlep5jCw/wG7hdkwQ/Z5nLIefveQRIY9nfy6xoR1uRYBtpZgI6339F5dgvm/e9B"
+        crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" media="screen" href="assets/css/style.css">
     <script src="main.js"></script>
 </head>
-<body>
-    <nav>
-        <div class="width960">
-            <h1>Tim Bedsole</h1>
-            <ul>
-                <li id="aboutAnchor"><a href="index.html" class="navAnchor">About</a></li>
-                <li id="portfolioAnchor"><a href="portfolio.html" class="navAnchor">Portfolio</a></li>
-                <li id="contactAnchor"><a href="contact.html" class="navAnchor">Contact</a></li>
+
+<body class="site">
+    <div class="navbar container-fluid bg-white p-0 navbar-light" id="navContainer">
+        <div class="container p-0">
+            <nav class="navbar-header">
+                <a class="navbar-brand" href="index.html" id="logo">Tim Bedsole</a>
+            </nav>
+            <ul class="nav navbar-nav ml-auto">
+                <li id="aboutAnchor" class="nav-item">
+                    <a href="index.html" class="nav-link">About</a>
+                </li>
+                <li id="portfolioAnchor" class="nav-item">
+                    <a href="portfolio.html" class="nav-link">Portfolio</a>
+                </li>
+                <li id="contactAnchor" class="nav-item">
+                    <a href="contact.html" class="nav-link">Contact</a>
+                </li>
             </ul>
         </div>
-    </nav>
+    </div>
     <main>
-        <article class="width960 portfolioArticle">
-            <header>
-                <h2>Portfolio</h2>
-            </header>
-            <div class="container">
-                <a href="https://timothyb92.github.io/Word-Guess-Game/"><img src="assets/images/sfHangMan.png" alt="My Street Fighter Hangman game">
-                <div class="centered-bottom">Hangman</div></a>
+        <div class="container site-content">
+            <article>
+                <header>
+                    <div class="row">
+                        <div class="col-md-12">
+                            <h2>Portfolio</h2>
+                        </div>
+                    </div>
+                </header>
+            </article>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <img class="img-fluid" src="assets/images/hangman.png" alt="Screenshot of hangman game">
+                </div>
+                <div class="col-md-8 text-center">
+                        <div class="col-md-12"><h3>Hangman</h3></div>
+                    <div class="col-md-12">This is a Street Fighter themed hangman game I made for the first JavaScript homework in the bootcamp.</div>
+                    <div class="col-md-12 portfolioButtons">
+                        <a href="https://github.com/Timothyb92/Word-Guess-Game"><button class="btn"><i class="fab fa-github"></i> GitHub Repo</button></a>
+                        <a href="https://timothyb92.github.io/Word-Guess-Game"><button class="btn">Deployed Site</button></a>
+                    </div>
+                </div>
             </div>
-            <div class="container">
-                <a href="https://timothyb92.github.io/unit-4-game/"><img src="assets/images/elementsGameScreenShot.png" alt="Master The Elements screenshot">
-                <div class="centered-bottom">Master The Elements</div></a>
+        </div>
+        <div class="container">
+            <div class="row marginTop">
+                <div class="col-md-4">
+                    <img class="img-fluid" src="assets/images/elements.png" alt="Screenshot of master the elements game">
+                </div>
+                <div class="col-md-8 text-center">
+                    <div class="col-md-12"><h3>Master The Elements</h3></div>
+                    <div class="col-md-12">This "Master The Elements" game was what I made for the first jQuery homework.</div>
+                    <div class="col-md-12 portfolioButtons">
+                        <a href="https://github.com/Timothyb92/unit-4-game"><button class="btn"><i class="fab fa-github"></i> GitHub Repo</button></a>
+                        <a href="https://timothyb92.github.io/unit-4-game/"><button class="btn">Deployed Site</button></a>
+                    </div>
+                </div>
             </div>
-            <div class="container">
-                <img src="assets/images/drunkLadyPlaceholder.jpg" alt="Drunk Lady Placeholder Image">
-                <div class="centered-bottom">RPG Game</div>
+        </div>
+        <div class="container">
+            <div class="row marginTop">
+                <div class="col-md-4">
+                    <img class="img-fluid" src="assets/images/giftastic.png" alt="Screenshot of GifTastic">
+                </div>
+                <div class="col-md-8 text-center">
+                    <div class="col-md-12"><h3>GifTastic</h3></div>
+                    <div class="col-md-12">GifTastic is what I made for the first homework assignment that dealt with APIs.</div>
+                    <div class="col-md-12 portfolioButtons">
+                        <a href="https://github.com/Timothyb92/GifTastic"><button class="btn"><i class="fab fa-github"></i> GitHub Repo</button></a>
+                        <a href="https://timothyb92.github.io/GifTastic/"><button class="btn">Deployed Site</button></a>
+                    </div>
+                </div>
             </div>
-            <div class="container">
-                <img src="assets/images/headphonesPlaceholder.jpg" alt="Headphones Placeholder Image">
-                <div class="centered-bottom">Trivia Game</div>
+        </div>
+        <div class="container">
+            <div class="row marginTop">
+                <div class="col-md-4">
+                    <img class="img-fluid" src="assets/images/trivia.png" alt="Screenshot of trivia game">
+                </div>
+                <div class="col-md-8 text-center">
+                    <div class="col-md-12"><h3>Comic Trivia</h3></div>
+                    <div class="col-md-12">This comic book themed trivia game was from the first homework assignment we had involving timers in JavaScript.</div>
+                    <div class="col-md-12 portfolioButtons">
+                        <a href="https://github.com/Timothyb92/TriviaGame"><button class="btn"><i class="fab fa-github"></i> GitHub Repo</button></a>
+                        <a href="https://timothyb92.github.io/TriviaGame/"><button class="btn">Deployed Site</button></a>
+                    </div>
+                </div>
             </div>
-            <div class="container">
-                <img src="assets/images/laptopPlaceholder.jpg" alt="Headphones Placeholder Image">
-                <div class="centered-bottom">Rutgers Info Widget</div>
+        </div>
+        <div class="container">
+            <div class="row marginTop">
+                <div class="col-md-4">
+                    <img class="img-fluid" src="assets/images/trainScheduler.png" alt="Screenshot of train scheduler">
+                </div>
+                <div class="col-md-8 text-center">
+                    <div class="col-md-12"><h3>Train Scheduler</h3></div>
+                    <div class="col-md-12">Train Scheduler was the homework assignment that utilized a Firebase database and moment.js</div>
+                    <div class="col-md-12 portfolioButtons">
+                        <a href="https://github.com/Timothyb92/train-scheduler"><button class="btn"><i class="fab fa-github"></i> GitHub Repo</button></a>
+                        <a href="https://timothyb92.github.io/train-scheduler/"><button class="btn">Deployed Site</button></a>
+                    </div>
+                </div>
             </div>
-            <div class="container">
-                <img src="assets/images/runwayPlaceholder.jpg" alt="Runway Placeholder Image">
-                <div class="centered-bottom">Rock Paper Scissors</div>
+        </div>
+        <div class="container">
+            <div class="row marginTop">
+                <div class="col-md-4">
+                    <img class="img-fluid" src="assets/images/liriBot.png" alt="Screenshot of Liri Bot">
+                </div>
+                <div class="col-md-8 text-center">
+                    <div class="col-md-12"><h3>Liri Bot</h3></div>
+                    <div class="col-md-12">Liri Bot is a node.js application that runs entirely in the terminal. It utilizes different node packet modules to retrieve different categories of data.</div>
+                    <div class="col-md-12 portfolioButtons">
+                        <a href="https://github.com/Timothyb92/liri-node-app"><button class="btn"><i class="fab fa-github"></i> GitHub Repo</button></a>
+                    </div>
+                </div>
             </div>
-        </article>
+        </div>
     </main>
     <footer>
-        <div id="footerDiv">Copyright &copy;</div>
+        <div class="container" id="footerContainer">
+            <div class="row justify-content-center">
+                <div id="footerP" class="col-md-12 text-center">
+                    <p class="col-md-3">Copyright &copy;</p>
+                    <p class="col-md-3">
+                        <a href="https://www.linkedin.com/in/timothy-bedsole-626b01162/">
+                            <i class="fab fa-linkedin"></i>
+                            <span> Linked</span>
+                        </a>
+                    </p>
+                    <p class="col-md-3">
+                        <a href="https://github.com/Timothyb92">
+                            <i class="fab fa-github"></i>
+                            <span> Timothyb92</span>
+                        </a>
+                    </p>
+                    <p class="col-md-3">
+                        <i class="far fa-envelope"></i>
+                        <span> timbedsole@gmail.com</span>
+                    </p>
+                </div>
+            </div>
+        </div>
     </footer>
 </body>
+
 </html>
